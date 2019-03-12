@@ -94,6 +94,7 @@
 				popupAnchor:  [0, -50]
 			});
 			
+			//Pas mettre maison pour raison confidentialité
 			var maison = L.icon({
 				iconUrl: 'data/marqueur_vert.png',
 				shadowUrl: 'lib/leaflet/images/marker-shadow.png',
@@ -152,15 +153,6 @@
 			marqueurGeneve.addTo(map);
 			marqueurGeneve.bindPopup(
 			'<b>Genève</b><div><img style="width:100%" src="data/Genève.png"></div>',
-			{minWidth:256}
-			);
-			
-			//La Noë
-			var point = [48.041857, -1.582694];
-			var marqueurLaNoe = L.marker(point, {icon: maison});
-			marqueurLaNoe.addTo(map);
-			marqueurLaNoe.bindPopup(
-			'<b>Maison La Noë</b><div><img style="width:100%" src="data/Maison_la_noe.png"></div>',
 			{minWidth:256}
 			);
 			
